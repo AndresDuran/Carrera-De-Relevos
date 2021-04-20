@@ -48,8 +48,7 @@ public class Equipo {
     }
    
     /**
-     * Getters y setters
-     * @return 
+     * getters y setters
      */
     public String getNombre() {
         return nombre;
