@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.edu.ucundinamarca.carrerarelevos;
 
 /**
  * @param nombre es el nombre del equipo
- * @param inicial es la primera letra del equipo
+ * @param inicial es el identificador del equipo
  * @param posActual es la posicion inicial en la que comienza la carrera
  * @author Andres
  */
@@ -27,6 +22,29 @@ public class Equipo {
         this.inicial = inicial;
         this.posActual=0;
 
+    }
+    
+    
+    /**
+     * Método que concatena para imprimir
+     * @return imprimir (variable concatenada)
+     */
+    
+    public synchronized String concatenarImpresion(){
+        String imprimir = "";
+        imprimir = "\nEquipo : " + inicial + " ";
+        for (int i = 0; i <= 100; i++) {
+            if (i == 33) {
+                imprimir += "|R|";
+            } else if (i == 66) {
+                imprimir += "|R|";
+            } else if (i == posActual) {
+                imprimir += "{^o^}";
+            } else {
+                imprimir += "¨";
+            }
+        }
+        return imprimir;
     }
    
     /**
