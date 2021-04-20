@@ -7,8 +7,7 @@ package co.edu.ucundinamarca.carrerarelevos;
 
 /**
  * Clase donde se crean los objetos de equipos y atletas
- * @author Alejo02
- * @author Luna
+ * @author Andres
  */
 public class Principal {
     
